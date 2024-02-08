@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+  }
+  
+  button[type="button"] {
+    margin: 10px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 2em;
+  }
+  
+  button[type="button"]:first-child {
+    background-color: #08bd77; 
+    color: #fff; 
+  }
+  
+  button[type="button"]:last-child {
+    background-color: #dc3545; 
+    color: #fff; 
+  }
+  
