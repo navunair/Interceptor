@@ -4,7 +4,7 @@ import { catchError, throwError } from 'rxjs';
 export const errorInterceptor: HttpInterceptorFn = (req, next) => {
   return next(req).pipe(
     catchError((err) => {
-      if([404].includes(err.status)){
+      if(err.status === 404){
         window.alert('authorisation error');
       }
       const e = err.error.message || err.statusText;
